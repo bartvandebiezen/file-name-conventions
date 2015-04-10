@@ -59,8 +59,7 @@ Don't be afraid to write long informative file names. Few people type a file nam
 - characteristics
 - location
 
-**Give your images detailed, informative filenames**
-The filename can give Google clues about the subject matter of the image. Try to make your filename a good description of the subject matter of the image. For example, my-new-black-kitten.jpg is a lot more informative than IMG00023.JPG. Descriptive filenames can also be useful to users: If we're unable to find suitable text in the page on which we found the image, we'll use the filename as the image's snippet in our search results. - [Google, 2015, Image publishing guidelines](https://support.google.com/webmasters/answer/114016?hl=en)
+> **Give your images detailed, informative filenames** The filename can give Google clues about the subject matter of the image. Try to make your filename a good description of the subject matter of the image. For example, my-new-black-kitten.jpg is a lot more informative than IMG00023.JPG. Descriptive filenames can also be useful to users: If we're unable to find suitable text in the page on which we found the image, we'll use the filename as the image's snippet in our search results. - [Google, 2015, Image publishing guidelines](https://support.google.com/webmasters/answer/114016?hl=en)
 
 #### Keep people's names compact
 
