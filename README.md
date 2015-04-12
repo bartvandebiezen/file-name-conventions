@@ -31,7 +31,7 @@ Sections should be written in this order:
 1. Description
 2. Number
 3. Date
-4. Image size, pixel density, target device
+4. Target device, image size, pixel density
 5. Version number
 6. Status
 7. Language code
@@ -115,13 +115,13 @@ description-2000--2010.php
 
 See ['ISO 8601'](https://en.wikipedia.org/wiki/ISO_8601) for further reading.
 
-### Use special modifiers for image sizes, target devices or media queries, and pixel densities.
+### Use special modifiers for target devices, image sizes or media queries, and pixel densities.
 
 Modifiers are inspired by [Apple iOS naming conventions](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/LoadingResources/ImageSoundResources/ImageSoundResources.html#//apple_ref/doc/uid/10000051i-CH7-SW1).
 
-- Order should be: size, target device or media query, pixel density.
-- Start image sizes with a dash (-) as delimiter.
+- Order should be: target device or media query, size, pixel density.
 - Start media queries with a tilde (~) as delimiter.
+- Start image sizes with a dash (-) as delimiter.
 - Start pixel density with an at-sign (@) as delimiter.
 - When only a width or height is available or applicable, add a 'w' for width or 'h' for height directly after the the amount of pixels.
 - When both measurements are available, do not add a 'w' or 'h' and separate the width and height with an 'x'.
@@ -132,9 +132,9 @@ description@2x.jpg
 description~lap.jpg
 description~desk.jpg
 description~lap@2x.jpg
-description-1024w~palm@2x.jpg
-description-568h~iphone@2x.jpg
-description-1024x768~palm@2x.jpg
+description~palm-1024w@2x.jpg
+description~iphone5-568h@2x.jpg
+description~palm-1024x768@2x.jpg
 ```
 
 ### Use version numbers if available
