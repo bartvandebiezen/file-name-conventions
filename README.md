@@ -39,7 +39,7 @@ Sections should be written in this order:
 
 **Possible combinations**
 ```
-description-01-2015010~palm-1.0b-draft.en.min.js /* extreme combination */
+description-01-20150102~palm-1.0b-draft.en.min.js /* extreme combination */
 description.min.js
 description.en.html
 description-01.jpg
