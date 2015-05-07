@@ -35,7 +35,7 @@ Sections should be written in this order:
 5. Version number
 6. Status
 7. Language code
-8. file conditions
+8. File conditions
 
 **Possible combinations**
 ```
