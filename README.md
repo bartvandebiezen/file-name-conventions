@@ -39,13 +39,13 @@ Sections should be written in this order:
 
 **Possible combinations**
 ```
-description-01-20150102~palm-1.0b-draft.en.min.js /* extreme combination */
+description-01-20150102-palm-1.0b-draft.en.min.js /* extreme combination */
 description.min.js
 description.en.html
 description-01.jpg
 description-02.jpg
-description-1024x768@2x.jpg
-description~desk@2x.jpg
+description-1024x768_2x.jpg
+description-desk_2x.jpg
 ```
 
 ### Write description for developers and users
@@ -117,24 +117,26 @@ See ['ISO 8601'](https://en.wikipedia.org/wiki/ISO_8601) for further reading.
 
 ### Use special modifiers for target devices, image sizes or media queries, and pixel densities.
 
-Modifiers are inspired by [Apple iOS naming conventions](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/LoadingResources/ImageSoundResources/ImageSoundResources.html#//apple_ref/doc/uid/10000051i-CH7-SW1).
+Modifiers are inspired by [Apple iOS naming conventions](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/LoadingResources/ImageSoundResources/ImageSoundResources.html#//apple_ref/doc/uid/10000051i-CH7-SW1). There are some differences. Apple uses '@' as a delimiter for the section indicating higher resolution images, for example '@2x' for retina images. Because '@' is a reserved character and can create problems, we use [Bourbon's convention](http://bourbon.io/docs/#retina-image): an underscore. Also, Apple uses a tilde (~) as a delimiter for a section indicating specific devices. Because also a tilde can create problems, we suggest to simply use a dash.
 
-- Order should be: target device or media query, size, pixel density.
-- Start media queries with a tilde (~) as delimiter.
+- Order should be: (1) target device or media query, (2) size, (3) pixel density.
+- Start target device or media queries with a dash (-) as delimiter.
 - Start image sizes with a dash (-) as delimiter.
-- Start pixel density with an at-sign (@) as delimiter.
+- Start pixel density with an underscore (_) as delimiter, for example '_2x' or '_3x'.
 - When only a width or height is available or applicable, add a 'w' for width or 'h' for height directly after the the amount of pixels.
 - When both measurements are available, do not add a 'w' or 'h' and separate the width and height with an 'x'.
+- When both the width and height should not exceed a dimension but the images should keep the original aspect ratio, add a 'm' (maximum) after the amount of pixels.
 
 **Right:**
 ```
-description@2x.jpg
-description~lap.jpg
-description~desk.jpg
-description~lap@2x.jpg
-description~palm-1024w@2x.jpg
-description~iphone5-568h@2x.jpg
-description~palm-1024x768@2x.jpg
+description_2x.jpg
+description-lap.jpg
+description-desk.jpg
+description-lap_2x.jpg
+description-palm-1024w_2x.jpg
+description-iphone5-568h_2x.jpg
+description-palm-1024x768_2x.jpg
+description-40m.jpg
 ```
 
 ### Use version numbers if available
