@@ -125,7 +125,7 @@ Modifiers are inspired by [Apple iOS naming conventions](https://developer.apple
 - Start pixel density with an underscore (_) as delimiter, for example '_2x' or '_3x'.
 - When only a width or height is available or applicable, add a 'w' for width or 'h' for height directly after the the amount of pixels.
 - When both measurements are available, do not add a 'w' or 'h' and separate the width and height with an 'x'.
-- When both the width and height should not exceed a dimension but the images should keep the original aspect ratio, add a 'm' (maximum) after the amount of pixels.
+- When both the width and height should not exceed a dimension but the images should keep the original aspect ratio, add a 'max' (maximum) after the amount of pixels.
 
 **Right:**
 ```
@@ -136,7 +136,7 @@ description-lap_2x.jpg
 description-palm-1024w_2x.jpg
 description-iphone5-568h_2x.jpg
 description-palm-1024x768_2x.jpg
-description-40m.jpg
+description-40max.jpg
 ```
 
 ### Use version numbers if available
